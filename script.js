@@ -96,20 +96,18 @@ function checkForMatch() {
 
 // As cartas combinam! Desativa o clique.
 function disableCards() {
-    matches++;
+    // 1. Remove o evento de clique: A carta não pode mais ser virada/desvirada pelo usuário.
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    // 2. Adiciona a classe 'matched': Esta classe é puramente visual e de acessibilidade.
+    //    Ela torna a carta mais "apagada" (opacity: 0.5) e, crucialmente, 
+    //    impede o clique (pointer-events: none), mesmo que o eventListener tenha sido removido.
     firstCard.classList.add('matched');
     secondCard.classList.add('matched');
 
+    // 3. Reseta as variáveis de controle (firstCard, secondCard, etc.) para o próximo turno.
     resetBoard();
-
-    // Verifica se o jogo acabou
-    if (matches === cardImages.length) {
-        setTimeout(() => {
-            alert(`🎉 Parabéns! Você encontrou todos os pares em ${tries} tentativas!`);
-        }, 500);
-    }
 }
 
 // As cartas NÃO combinam! Vira de volta.
