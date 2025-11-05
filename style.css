@@ -58,8 +58,11 @@ h1 {
 }
 
 .card.matched {
-    opacity: 0.5;
-    cursor: default;
+    opacity: 0.5; /* Deixa a imagem mais apagada */
+    cursor: default; /* Remove o ponteiro de clique do mouse */
+    
+    /* Esta linha é a mais importante para desabilitar o clique: */
+    pointer-events: none; 
 }
 
 .front-face {
