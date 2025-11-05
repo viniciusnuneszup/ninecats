@@ -2,11 +2,11 @@
 const cardImages = [
     // Se não tiver as URLs, o jogo não carregará as imagens!
     { name: 'Aurora', url: '3Aurora.jpeg' },
-    { name: 'Aria', url: '6PassaFome.jpg' },
-    { name: 'Santiago', url: '4Santiago.jpg' },
+    { name: 'Aria', url: '6PassaFome.png' },
+    { name: 'Santiago', url: '4Santiago.png' },
     { name: 'Athena', url: '5Athena.jpg' },
     { name: 'Nina', url: '1Nina.jpeg' },
-    { name: 'Aquiles', url: '7Aquiles.jpg' },
+    { name: 'Aquiles', url: '7Aquiles.png' },
 ];
 
 let cards = [];
