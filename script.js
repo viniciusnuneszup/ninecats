@@ -1,12 +1,12 @@
 // ⚠️ ATENÇÃO: SUBSTITUA as URLs abaixo pelas URLs públicas das suas imagens.
 const cardImages = [
     // Se não tiver as URLs, o jogo não carregará as imagens!
-    { name: 'Aurora', url: 'URL_DA_SUA_IMAGEM_3Aurora.jpeg' },
-    { name: 'Aria', url: 'URL_DA_SUA_IMAGEM_6PassaFome.jpg' },
-    { name: 'Santiago', url: 'URL_DA_SUA_IMAGEM_4Santiago.jpg' },
-    { name: 'Athena', url: 'URL_DA_SUA_IMAGEM_5Athena.jpg' },
-    { name: 'Nina', url: 'URL_DA_SUA_IMAGEM_1Nina.jpeg' },
-    { name: 'Aquiles', url: 'URL_DA_SUA_IMAGEM_7Aquiles.jpg' },
+    { name: 'Aurora', url: '3Aurora.jpeg' },
+    { name: 'Aria', url: '6PassaFome.jpg' },
+    { name: 'Santiago', url: '4Santiago.jpg' },
+    { name: 'Athena', url: '5Athena.jpg' },
+    { name: 'Nina', url: '1Nina.jpeg' },
+    { name: 'Aquiles', url: '7Aquiles.jpg' },
 ];
 
 let cards = [];
